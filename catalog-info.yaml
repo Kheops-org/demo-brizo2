@@ -1,0 +1,29 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-brizo2
+  description: demo-brizo2
+  links:
+    - url: https://github.com/Kheops-org/demo-brizo2
+      title: Source Code
+      icon: github
+    - url: https://argocd-server-sreez.apps.oc-med.wk.nt.local/applications/sreez/demo-brizo2
+      title: ArgoCD Deployment
+      icon: cached
+    - url: http://localhost:8090
+      title: HyperDX Logs and Monitoring
+      icon: monitor_heart
+  tags:
+    - go
+    - sreez
+  annotations:
+    argocd/app-name: demo-brizo2
+    backstage.io/kubernetes-id: demo-brizo2
+    github.com/workflows: docker-image.yml
+    github.com/project-slug: Kheops-org/demo-brizo2
+spec:
+  type: api
+  system: system:default/examples
+  lifecycle: production
+  owner: user:default/jggc
