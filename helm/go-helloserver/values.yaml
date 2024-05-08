@@ -9,7 +9,7 @@ image:
   repository: registry.nationtech.io/demo-brizo2
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 20240508-151728
+  tag: 20240508-152737
 
 imagePullSecrets:
 - name: nationtech-registry-key
